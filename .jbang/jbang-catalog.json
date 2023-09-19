@@ -1,0 +1,8 @@
+{
+  "catalogs": {},
+  "aliases": {
+    "pdfmerge": {
+      "script-ref": "src/MergeCommand.java"
+    }
+  }
+}

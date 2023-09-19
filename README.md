@@ -1,28 +1,25 @@
 # pdfmerge
 
-## Build
+jbang'ed version of https://github.com/geoand/quarkus-pdfmerge
+
+## Run
 
 ```bash
-./mvnw package
-```
-
-## Run 
-
-```bash
-java -jar target/quarkus-app/quarkus-run.jar --input=/location/f1.pdf --input=/location/f2.pdf
+./jbang pdfmerge src/MergeCommand.java --input=/location/f1.pdf --input=/location/f2.pdf
 ```
 
 ## Native
 
-### Build
+Install GraalVM first.
 
 ```bash
-./mvnw package -Dnative
+./jbang --native src/MergeCommand.java --input=/location/f1.pdf --input=/location/f2.pdf
 ```
 
-### Run
+## Install
 
-```bash
-target/pdfmerge --input=/location/f1.pdf --input=/location/f2.pdf
+```
+./jbang app install --native pdfmerge
+pdfmerge --input=/location/f1.pdf --input=/location/f2.pdf
 ```
 
