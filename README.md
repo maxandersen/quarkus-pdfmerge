@@ -8,18 +8,17 @@ jbang'ed version of https://github.com/geoand/quarkus-pdfmerge
 ./jbang pdfmerge src/MergeCommand.java --input=/location/f1.pdf --input=/location/f2.pdf
 ```
 
-## Native
-
-```bash
-./jbang --native src/MergeCommand.java --input=/location/f1.pdf --input=/location/f2.pdf
-```
 
 ## Install
 
 ```
-./jbang app install --native pdfmerge
+./jbang app install pdfmerge
 pdfmerge --input=/location/f1.pdf --input=/location/f2.pdf
 ```
+
+## Native
+
+Add `--native` to the command line to build/run as a native image.
 
 ## Edit
 
