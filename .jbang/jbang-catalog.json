@@ -2,7 +2,7 @@
   "catalogs": {},
   "aliases": {
     "pdfmerge": {
-      "script-ref": "src/MergeCommand.java"
+      "script-ref": "../src/MergeCommand.java"
     }
   }
 }
